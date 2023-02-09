@@ -14,7 +14,7 @@ func solution(_ s:String, _ skip:String, _ index:Int) -> String {
 
 func decrypt(_ c:String, _ skipList:[Int], _ index:Int) -> String {
 	var count = 0   
-	var uniNum = Int(UnicodeScalar(String(c))!.value)-1 //116
+	var uniNum = Int(UnicodeScalar(String(c))!.value)-1 
 	
 	while count < index{
 		uniNum += 1	  
